@@ -1,14 +1,22 @@
 name: data-validation
-on: push
+on:
+  push:
+    branches: [development]
+  pull_request:
+    branches: [main]
 jobs:
-  data-validation:
+  build-application:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x, 15.x, 16.x]
+
     steps:
-      - name: initial-test
-        run: echo "Initial Testing Now"
-
-      - name: buil-app
-        run: npm run build
-
-      - name: test-app
-        run: npm run test
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test
