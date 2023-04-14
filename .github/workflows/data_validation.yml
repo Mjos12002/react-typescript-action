@@ -1,8 +1,8 @@
 name: data-validation
 on: push
-      branches: [development, data_validation]
+      branches: [development]
     pull_request
-      branches: [main, development, data_validation]
+      branches: [development]
 jobs:
   validate-data
     runs-on: ubuntu-latest
