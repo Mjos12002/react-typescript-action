@@ -8,7 +8,7 @@ jobs:
         run: echo "Initial Testing Now"
 
       - name: buil-app
-        run: npm build
+        run: npm run-script build
 
       - name: test-app
         run: npm test
