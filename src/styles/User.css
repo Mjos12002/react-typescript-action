@@ -12,3 +12,8 @@ body {
     background-color: red;
     display: flex;
 }
+
+.footer {
+    background-color: black;
+    display: flex;
+}
