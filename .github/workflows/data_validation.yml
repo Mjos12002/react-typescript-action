@@ -1,9 +1,10 @@
 name: data-validation
 on: push
-      branches: [development]
-    pull_request
-      branches: [development]
 jobs:
-  validate-data
+  data-validation:
     runs-on: ubuntu-latest
+    steps:
+      - name: initial-test
+      run: echo "Initial Testing Now"
+
     
