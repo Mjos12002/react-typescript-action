@@ -5,6 +5,17 @@ import User from './component/User';
 function App() {
   return (
     <div className="App">
+      <ul>
+        <li>
+          Home
+        </li>
+        <li>
+          Sign In
+        </li>
+        <li>
+          Sign out
+        </li>
+      </ul>
       <User></User>
     </div>
   );
