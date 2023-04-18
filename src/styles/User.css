@@ -17,3 +17,8 @@ body {
     background-color: black;
     display: flex;
 }
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+}
