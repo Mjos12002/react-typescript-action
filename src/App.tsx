@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <ul>
         <li>
-          Home
+          Home is now here
         </li>
         <li>
           Sign In
