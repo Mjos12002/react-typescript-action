@@ -16,7 +16,12 @@ function User(){
                     Left
                 </div>
                 <div className="right">
-                    Right
+                    <div>
+                        Right left
+                    </div>
+                    <div>
+                        Right right
+                    </div>
                 </div>
                 <div className="footer">
                     Footer

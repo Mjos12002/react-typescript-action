@@ -22,3 +22,21 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.main-parent {
+    background-color: red;
+    width: 100%;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+}
+.right div:nth-child(1) {
+    width: 50%;
+    background-color: gray;
+}
+.right div:nth-child(2) {
+    background-color: blueviolet;
+    width: 50%;
+}
